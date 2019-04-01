@@ -9,10 +9,10 @@ pthread_mutex_t locked;
 void *faktorial(void *input){
     pthread_mutex_lock(&locked);
     int *temp; 
-    temp = (int *)input;//void to int
+    temp = (int *)input;//void to Int
     int hasil=1;
     int i;
-    for(i=*temp;i>1;i--)hasil*=i;//rumusnya
+    for(i=*temp;i>1;i--)hasil*=i;//Di rumus faktorial
     printf(" %d ! = %d\n",*temp,hasil);
     pthread_mutex_unlock(&locked);
 }
@@ -23,8 +23,8 @@ int main(int argc,char *argv[]){
     int i,j,tempo;
     int temp[1000];
     for(i=1;i<argc;i++){
-        temp[i]=atoi(argv[i]);//str to int
-        //printf("%d\n",temp[i]);
+        temp[i]=atoi(argv[i]);//str to intL
+        //printf("%d\n",tempa[i]);
     }
     for(i=1;i<argc;i++){//selection sort
         for(j=i;j<argc;j++){
@@ -33,11 +33,11 @@ int main(int argc,char *argv[]){
                 temp[j]=temp[i];
                 temp[i]=tempo;
             }
-            //printf("%d %d %d\n",temp[i],temp[j],tempo);
+            //printf("%d %d %d\n",temp[i],temp[j],vtempo);
         }
     }
     for(i=1;i<argc;i++){
-        //printf("%d\n",temp[i]);
+        //printf("%d\on",temp[i]);
         pthread_create(&(threadid[i]),NULL,&faktorial,(void *)&temp[i]);
         sleep(1);
     }
