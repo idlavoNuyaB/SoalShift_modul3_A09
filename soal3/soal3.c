@@ -32,7 +32,7 @@ void *bangunAgmal(void *woibangun){
             printf("Agmal Terbangun, mereka bangun pagi dan berolahraga\n");
             exit(0);
         }
-        printf("%d %d\n",countertidur,counterbangun);
+        //printf("%d %d\n",countertidur,counterbangun);
         printf("1. All Status\n");
         printf("2. Agmal Ayo Bangun\n");
         printf("3. Iraj Ayo Tidur\n");
@@ -61,7 +61,7 @@ void *tidurIraj(void *woitidur){
             printf("Iraj ikut tidur, dan bangun kesiangan bersama Agmal\n");
             exit(0);
         }
-        printf("%d %d\n",countertidur,counterbangun);
+        //printf("%d %d\n",countertidur,counterbangun);
         printf("1. All Status\n");
         printf("2. Agmal Ayo Bangun\n");
         printf("3. Iraj Ayo Tidur\n");
