@@ -10,10 +10,10 @@ void *faktorial(void *input){
     pthread_mutex_lock(&locked);
     int *temp; 
     temp = (int *)input;//void to Int
-    int hasil=1;
+    long long int hasil=1;
     int i;
     for(i=*temp;i>1;i--)hasil*=i;//Di rumus faktorial
-    printf(" %d ! = %d\n",*temp,hasil);
+    printf(" %d ! = %lld\n",*temp,hasil);
     pthread_mutex_unlock(&locked);
 }
 
