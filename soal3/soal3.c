@@ -19,9 +19,9 @@ void *bangunAgmal(void *woibangun){
             printf("1. All Status\n");
             printf("2. Agmal Ayo Bangun\n");
             printf("3. Iraj Ayo Tidur\n");
-            sleep(10);
             countertidur=0;
             counterbangun=0;
+            sleep(10);
             cek=0;
             pthread_exit(NULL);
         }
@@ -48,9 +48,9 @@ void *tidurIraj(void *woitidur){
             printf("1. All Status\n");
             printf("2. Agmal Ayo Bangun\n");
             printf("3. Iraj Ayo Tidur\n");
-            sleep(10);
             counterbangun=0;
             countertidur=0;
+            sleep(10);
             cek=0;
             pthread_exit(NULL);
         }
