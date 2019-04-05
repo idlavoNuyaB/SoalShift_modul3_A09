@@ -205,6 +205,7 @@ void pilihangelut(){
         if(regenerasi<=0){
             regenerasi=0;
             printf("%s died in battle\n",nama);
+            sleep(1);
             resetinput();
             exit(0);
         }
@@ -220,6 +221,8 @@ void pilihangelut(){
         if(regenerasi<=0){
             regenerasi=0;
             printf("%s died in battle\n",nama);
+            sleep(1);
+            resetinput();
             exit(0);
         }
         if(counter!=3){
